@@ -21,15 +21,7 @@ class Library
 int Library::search_book(string bookname)
 {
     return bookname==book_name;
-        // if(bookname==book_name)
-        // {
-        //     return 1;
-        // }
-        // else
-        // {
-        //     return 0;
-        // }
-    }
+}
 
 void Library::set_data()
 {
@@ -122,7 +114,7 @@ int main()
             }
             if(i==t)
                 {
-                    cout << "Account not found!" << endl;
+                    cout << "Book not found!" << endl;
                 }  
             goto menu;
         case 4:
