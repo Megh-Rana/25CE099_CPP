@@ -21,7 +21,7 @@ int main()
     cout << "Please enter number of times the input has to be concatenated" << endl;
     cin >> k;
     
-    long long number_int=stoi(number);
+    long long number_int=stoll(number);
     long long sum=number_int;
     while(sum>10)
     {
