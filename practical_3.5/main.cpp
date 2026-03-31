@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+int summation(int a)
+{
+    int sum=0;
+    while(a!=0)
+    {
+        sum+=a%10;
+        a/=10;
+    }
+    return sum;
+}
+
 int main()
 {
     string number;
@@ -11,11 +22,10 @@ int main()
     cin >> k;
     
     long long number_int=stoi(number);
-    long long sum=0;
-    while(number_int!=0)
+    long long sum=number_int;
+    while(sum>10)
     {
-        sum+=number_int%10;
-        number_int/=10;
+        sum=summation(sum);
     }
 
     string concat;
