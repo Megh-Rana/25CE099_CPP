@@ -8,7 +8,7 @@ int main()
     double acct_no;
     string name;
     long double balance;
-    Bank_Account user[10];
+    Bank_Account user= new Bank_Account[10];
     menu:
     cout << "Welcome to the Bank!" << endl
          << "1. Create Account" << endl
